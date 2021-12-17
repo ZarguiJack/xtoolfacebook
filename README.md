@@ -16,4 +16,4 @@ Pour Android, sur termux
 
 -->cd xtoolfacebook
 
--->python xtool.py
+-->python Xtool.py
