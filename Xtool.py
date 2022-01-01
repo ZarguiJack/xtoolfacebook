@@ -16,7 +16,7 @@ print('''
 upd = input('mettre à jour ?(y/n)')
 if upd == 'y':
     os.system('cd $home')
-    shutil.rmtree('xtoolfacebook')
+    os.system('mv xtoolfacebook xtoolx)
     os.system('git clone https://github.com/ZarguiJack/xtoolfacebook')
     print('done')
     os.system('cd xtoolfacebook')
