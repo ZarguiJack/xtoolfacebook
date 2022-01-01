@@ -1,4 +1,4 @@
-import smtplib, sys, ssl, os, getpass, 
+import smtplib, sys, ssl, os, getpass
 import shutil
 from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
