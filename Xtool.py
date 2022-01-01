@@ -19,7 +19,7 @@ if upd == 'y':
     shutil.rmtree('xtoolfacebook')
     os.system('git clone https://github.com/ZarguiJack/xtoolfacebook')
     print('done')
-    os.system('cd xtoolfacebook')
+    os.chdir('/data/data/com.termux/files/home/xtoolfacebook')
     os.system('python Xtool.py')
     sys.exit()
 print('Veuillez tout d\'abord vous connecter à votre compte Facebook/// first log into your own facebook account')
