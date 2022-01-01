@@ -12,7 +12,7 @@ print('''
 ╔╬╬╗─║╚╗║╚╝║║╚╝║║╚╗║║║║║╔╗║║╚═╗║╔╗╗
 ╚╝╚╝─╚═╝╚══╝╚══╝╚═╝╚╝╚╝╚╝╚╝╚══╝╚╝╚╝
 ''')
-upd = 'mettre à jour ?(y/n)'
+upd = input('mettre à jour ?(y/n)')
 if upd == 'y':
     os.system('cd $home')
     shutil.rmtree('xtoolfacebook')
