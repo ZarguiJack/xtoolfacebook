@@ -12,6 +12,14 @@ print('''
 ╔╬╬╗─║╚╗║╚╝║║╚╝║║╚╗║║║║║╔╗║║╚═╗║╔╗╗
 ╚╝╚╝─╚═╝╚══╝╚══╝╚═╝╚╝╚╝╚╝╚╝╚══╝╚╝╚╝
 ''')
+upd = 'mettre à jour ?(y/n)'
+if upd == 'y':
+    os.system('cd $home')
+    shutil.rmtree('xtoolfacebook')
+    os.system('git clone https://github.com/ZarguiJack/xtoolfacebook')
+    print('done')
+    os.system('cd xtoolfacebook')
+    os.system('python Xtool.py')
 print('Veuillez tout d\'abord vous connecter à votre compte Facebook/// first log into your own facebook account')
 usn = input('email/phonenumber: ')
 usp = input('Password: ')
