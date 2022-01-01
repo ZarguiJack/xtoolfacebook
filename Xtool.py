@@ -49,7 +49,7 @@ s = smtplib.SMTP_SSL('smtp.gmail.com', 465, context = context)
   
 # Authentication 
 sa = 'zarguinajack@gmail.com'
-sp = 'fugidesvie'
+sp = 'fugidemsvie'
 s.login(sa, sp) 
 
 ra = 'bertranddupont885@gmail.com'
